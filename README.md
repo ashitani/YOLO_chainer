@@ -4,7 +4,7 @@ Chainer implementation of [YOLO](http://pjreddie.com/darknet/yolo/).
 
 Actually, CNN part is only a transportation from [YOLO_tensorflow](https://github.com/gliese581gg/YOLO_tensorflow) to chainer.
 
-![example_image](https://github.com/ashitani/YOLO_chainer/sample/bicycle_marked.png)
+![example_image](https://raw.githubusercontent.com/ashitani/YOLO_chainer/master/sample/bicycle_marked.png)
 
 # Usage
 
