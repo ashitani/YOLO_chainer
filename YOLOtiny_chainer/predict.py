@@ -38,8 +38,8 @@ def predict(model,im_org):
       y = (by+box[1])*(im_h/7)
       w = box[2]**2.0*im_w
       h = box[3]**2.0*im_h
-      im_marked=cv2.rectangle(im_marked, (int(x-w/2), int( y-h/2)),( int(x+w/2), int(y+h/2)),[0,0,255],thickness=2)
-      im_marked=cv2.rectangle(im_marked, (int(x-w/2), int( y-h/2)),( int(x-w/2+100), int(y-h/2+20)),[0,0,255],thickness=-1)
+      cv2.rectangle(im_marked, (int(x-w/2), int( y-h/2)),( int(x+w/2), int(y+h/2)),[0,0,255],thickness=2)
+      cv2.rectangle(im_marked, (int(x-w/2), int( y-h/2)),( int(x-w/2+100), int(y-h/2+20)),[0,0,255],thickness=-1)
       cv2.putText(im_marked, classes[i],(int(x-w/2+5),int(y-h/2+15)), cv2.FONT_HERSHEY_SIMPLEX,0.5,(0,0,0),thickness=2)
 
   return im_marked
